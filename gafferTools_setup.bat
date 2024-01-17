@@ -8,3 +8,5 @@ setx GAFFER_REFERENCE_PATHS=%GAFFER_REFERENCE_PATHS%;%GAFFER_TOOLS/resources/ref
 
 rem check gaffer paths are properly setup
 set | findstr "GAFFER" | find /i "GAFFER"
+
+pause

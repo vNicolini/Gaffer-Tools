@@ -8,3 +8,5 @@ export GAFFER_REFERENCE_PATHS=$GAFFER_REFERENCE_PATHS;$GAFFER_TOOLS/resources/re
 
 # check gaffer paths are properly setup
 exe eval "export |grep GAFFER"
+
+read -n 1 -s -r -p "Press any key to continue..."
