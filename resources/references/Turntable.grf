@@ -692,7 +692,7 @@ __children["referenceTransform"]["transform"]["scale"]["z"].setInput( __children
 __children["referenceTransform"]["__uiPosition"].setValue( imath.V2f( 102.891113, 106.322182 ) )
 __children["PathFilter4"]["paths"].setValue( IECore.StringVectorData( [ '/CAM/farCam/refSpheres' ] ) )
 __children["PathFilter4"]["__uiPosition"].setValue( imath.V2f( 118.359161, 110.457726 ) )
-__children["Cyclo"]["cyclo"]["fileName"].setValue( '${library:assets}/cyclo.abc' )
+__children["Cyclo"]["cyclo"]["fileName"].setValue( '${library:assets}/cyclo/cyclo.abc' )
 __children["Cyclo"]["cyclo"]["refreshCount"].setValue( 2 )
 __children["Cyclo"]["cyclo"]["transform"]["scale"]["x"].setInput( __children["Cyclo"]["transform_scale_x"] )
 __children["Cyclo"]["cyclo"]["transform"]["scale"]["y"].setInput( __children["Cyclo"]["cyclo"]["transform"]["scale"]["x"] )
