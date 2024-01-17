@@ -21,9 +21,5 @@ if not defined GAFFER_REFERENCE_PATHS (
     setx GAFFER_REFERENCE_PATHS "!GAFFER_REFERENCE_PATHS!;!GAFFER_TOOLS!\resources\references"
 )
 
-rem check Gaffer paths are properly set up
-
-set GAFFER
-
 endlocal
 PAUSE
