@@ -9,7 +9,7 @@ def __scriptAdded( container, script ) :
     if "libraryReferences" not in variables :
         libraryReferences = variables.addMember(
             "library:references",
-            IECore.StringData( "$GAFFER_TOOLS/resources/references" ),
+            IECore.StringData( "${GAFFER_TOOLS}/resources/references" ),
             "libraryReferences"
         )
         Gaffer.MetadataAlgo.setReadOnly( variables["libraryReferences"]["name"], True )
@@ -18,7 +18,7 @@ def __scriptAdded( container, script ) :
     if "libraryAssets" not in variables :
         libraryAssets = variables.addMember(
             "library:assets",
-            IECore.StringData( "$GAFFER_TOOLS/resources/assets" ),
+            IECore.StringData( "${GAFFER_TOOLS}/resources/assets" ),
             "libraryAssets"
         )
         Gaffer.MetadataAlgo.setReadOnly( variables["libraryAssets"]["name"], True )

@@ -8,7 +8,7 @@ def __turntable() :
 
 def __turntablePostCreator( node, menu ) :
 
-    node.load("${library:references}/turntable.grf")
+    node.load("Turntable.grf")
 
 nodeMenu = GafferUI.NodeMenu.acquire( application )
 nodeMenu.append(
@@ -25,7 +25,7 @@ def __YetiProcedural() :
 
 def __YetiProceduralPostCreator( node, menu ) :
 
-    node.load("${library:references}/YetiProcedural.grf")
+    node.load("YetiProcedural.grf")
 
 nodeMenu = GafferUI.NodeMenu.acquire( application )
 nodeMenu.append(
@@ -42,7 +42,7 @@ def __GafferThree() :
 
 def __GafferThreePostCreator( node, menu ) :
 
-    node.load("${library:references}/GafferThree.grf")
+    node.load("GafferThree.grf")
 
 nodeMenu = GafferUI.NodeMenu.acquire( application )
 nodeMenu.append(
