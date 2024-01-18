@@ -1,17 +1,18 @@
 # How to install
 
 ## Windows
-
+```
 1- Download the repo.
 2- Extract (if downloaded as Zip else just move) the repo in the desired location
 3- Run gafferTools_setup.bat
+```
 
 ## Linux
-
+```
 1- Download the repo.
 2- Extract (if downloaded as Zip else just move) the repo in the desired location
 3- Run gafferTools_setup.sh
-
+```
 >[!wARNING]
 >The bash script currently is untested as I don't have a running linux system at the moment, it's expected to work but you've been warned in case it doesn't.
 
