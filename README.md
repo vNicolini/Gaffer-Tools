@@ -1,4 +1,4 @@
-# Setup steps
+# How to install
 
 ## Setup on Windows
 ```
@@ -21,9 +21,11 @@
 The script will create (or append to) the following user environment variables:
 ```
 GAFFER_TOOLS = parent directory of the bat/sh script(s) and tools
-GAFFER_STARTUP_PATHS = allows the nodes to show up in the node creation menu in the nodegraph
+GAFFER_STARTUP_PATHS = allows the nodes to show up in the node creation menu in the nodegraph and will create a custom Global Context Variable point to ${GAFFER_TOOLS/assets}
 GAFFER_REFERENCE_PATHS = location of the nodes files
 ```
+
+# Content
 
 ## Yeti Procedural
 
