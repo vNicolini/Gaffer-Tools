@@ -18,7 +18,7 @@
 
 ## How the setup works
 
-The script will create (or append to) the following user environment variables:
+The script will create (or append to if they already are set/existing) the following user environment variables:
 ```
 GAFFER_TOOLS = parent directory of the bat/sh script(s) and tools
 GAFFER_STARTUP_PATHS = allows the nodes to show up in the node creation menu in the nodegraph and will create a custom Global Context Variable point to ${GAFFER_TOOLS/assets}
@@ -35,3 +35,8 @@ Custom box that aleviates any potential user error(s) when loading and setting u
 
 >[!IMPORTANT]
 >**This requires to have your Yeti/installationPath/bin to be set in your PATH variable for the bbox to be calculated and displayed accordingly**
+
+
+## Turntable (WIP)
+
+## GafferThree (WIP)
