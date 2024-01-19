@@ -83,4 +83,17 @@ https://github.com/vNicolini/Gaffer-Tools/assets/57097563/05370399-24fc-4d3b-8c9
 
 - **HDRI Dropdown Menu:** Conveniently select HDRI environments from a dropdown menu, providing a user-friendly interface for quick and easy HDRI adjustments.  
 
+
+#### Batch Render Support (WIP)
+
+- **Batch Render Toggle:**  Allows to have the various HDRIs to be dispatched and rendered through a wedge node.  
+
+[!IMPORTANT]
+> ### Prerequisite
+> Requires a wedge node using the value set in the Selector plug of the Spreadsheet tab as Variable and the Index Variable plug set accordingly.
+>
+> Mode set to String List.
+>
+>**The Strings plug requires the enabledRowNames of the Spreadsheet as input.**
+
 ## GafferThree (WIP)
