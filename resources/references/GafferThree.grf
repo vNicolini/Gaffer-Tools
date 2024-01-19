@@ -73,7 +73,7 @@ __children["spreadsheet_GafferThree"]["rows"].addColumn( Gaffer.NameValuePlug( "
 __children["spreadsheet_GafferThree"]["rows"].addColumn( Gaffer.NameValuePlug( "gl:visualiser:maxTextureResolution", Gaffer.IntPlug( "value", defaultValue = 512, minValue = 2, maxValue = 2048, ), False, "maxTextureResolution", Gaffer.Plug.Flags.Default ), adoptEnabledPlug = True )
 __children["spreadsheet_GafferThree"]["rows"].addColumn( Gaffer.NameValuePlug( "gl:light:frustumScale", Gaffer.FloatPlug( "value", defaultValue = 1.0, minValue = 0.009999999776482582, ), False, "lightFrustumScale", Gaffer.Plug.Flags.Default ), adoptEnabledPlug = True )
 __children["spreadsheet_GafferThree"]["rows"].addColumn( Gaffer.NameValuePlug( "gl:light:drawingMode", Gaffer.StringPlug( "value", defaultValue = 'texture', ), False, "lightDrawingMode", Gaffer.Plug.Flags.Default ), adoptEnabledPlug = True )
-__children["spreadsheet_GafferThree"]["rows"].addColumn( Gaffer.StringPlug( "format", defaultValue = 'angular', ) )
+__children["spreadsheet_GafferThree"]["rows"].addColumn( Gaffer.StringPlug( "format", defaultValue = 'latlong', ) )
 __children["spreadsheet_GafferThree"].addChild( Gaffer.V2fPlug( "__uiPosition", defaultValue = imath.V2f( 0, 0 ), flags = Gaffer.Plug.Flags.Default | Gaffer.Plug.Flags.Dynamic, ) )
 __children["CollectScenes"] = GafferScene.CollectScenes( "CollectScenes" )
 parent.addChild( __children["CollectScenes"] )
