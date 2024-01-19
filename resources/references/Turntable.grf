@@ -855,7 +855,7 @@ Gaffer.Metadata.registerValue( __children["rows"][0]["cells"]["filename"]["value
 Gaffer.Metadata.registerValue( __children["rows"][0]["cells"]["filename"]["value"], 'nodule:type', '' )
 Gaffer.Metadata.registerValue( __children["rows"][0]["cells"]["filename"]["value"], 'label', 'Filename' )
 Gaffer.Metadata.registerValue( __children["rows"][0]["cells"]["filename"]["value"], 'noduleLayout:label', 'Filename' )
-Gaffer.Metadata.registerValue( __children["index"], 'description', 'Allows to have the various HDRIs to be dispatched and rendered through a wedge node.\n\n### Prerequisite\nRequires a wedge node using the value set in the Selector plug of the Spreadsheet tab as Variable and the Index Variable plug set accordingly.\\\n\\\nMode set to String List.\n\n**The Strings plug requires the enabledRowNames of the Spreadsheet as input.**' )
+Gaffer.Metadata.registerValue( __children["index"], 'description', 'Allows to have the various HDRIs to be dispatched and rendered through a wedge node.\n\n### Prerequisites\nRequires a wedge node using the value set in the Selector plug of the Spreadsheet tab as Variable and the Index Variable plug set accordingly.\\\n\\\nMode set to String List.\n\n**The Strings plug requires the enabledRowNames of the Spreadsheet as input.**' )
 Gaffer.Metadata.registerValue( __children["index"], 'nodule:type', '' )
 Gaffer.Metadata.registerValue( __children["index"], 'label', 'Batch Render' )
 Gaffer.Metadata.registerValue( __children["index"], 'plugValueWidget:type', 'GafferUI.BoolPlugValueWidget' )
