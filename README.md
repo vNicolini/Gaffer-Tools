@@ -41,12 +41,14 @@ Custom box that aleviates any potential user error(s) when loading and setting u
 
 ### Overview
 
-This Turntable Tool is a powerful utility designed for Gaffer, providing a seamless way to create turntable animations with ease.  
+This Turntable Tool is designed to provide a streamlined way to create turntable animations with ease.  
 This tool streamlines the process of setting up a turntable animation by automating asset and skydome rotation based on the timeline duration (split 50/50 by default).  
 It also includes features such as rotation offset fields, inversion toggles, automatic camera framing based on the asset bounding box, normalized scaling of the cyclo and HDRI in viewport, HDRI support, and visibility toggles for enhanced control over your turntable renders.
 
 https://github.com/vNicolini/Gaffer-Tools/assets/57097563/05370399-24fc-4d3b-8c94-ae904a8098c8
 
-
+### Features  
+#### Adaptive and Automatic Rotation  
+**Timeline Duration Control:** The tool automatically adapts asset and skydome rotation based on the timeline duration, ensuring a smooth and consistent turntable animation
 
 ## GafferThree (WIP)
