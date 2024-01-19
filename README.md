@@ -77,4 +77,10 @@ https://github.com/vNicolini/Gaffer-Tools/assets/57097563/05370399-24fc-4d3b-8c9
 - **Reference Spheres Toggle:** Enable or disable reference spheres as needed for visual guidance in your turntable setup.  
 
 
+#### HDRI Support  
+
+- **HDRI Repository Loader:** Load HDRI environments from a repository to enhance the visual quality of your turntable renders.  
+
+- **HDRI Dropdown Menu:** Conveniently select HDRI environments from a dropdown menu, providing a user-friendly interface for quick and easy HDRI adjustments.  
+
 ## GafferThree (WIP)
