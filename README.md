@@ -36,6 +36,7 @@ Custom box that aleviates any potential user error(s) when loading and setting u
 >[!IMPORTANT]
 >**This requires to have your Yeti/installationPath/bin to be set in your PATH variable for the bbox to be calculated and displayed accordingly**
 
+---
 
 ## Turntable Tool (WIP)
 
@@ -48,7 +49,32 @@ It also includes features such as rotation offset fields, inversion toggles, aut
 https://github.com/vNicolini/Gaffer-Tools/assets/57097563/05370399-24fc-4d3b-8c94-ae904a8098c8
 
 ### Features  
+
 #### Adaptive and Automatic Rotation  
-**Timeline Duration Control:** The tool automatically adapts asset and skydome rotation based on the timeline duration, ensuring a smooth and consistent turntable animation
+
+- **Timeline Duration Control:** The tool automatically adapts asset and skydome rotation based on the timeline duration, ensuring a smooth and consistent turntable animation.  
+
+
+#### Rotation Controls
+
+- **Rotation Offset Fields:** Fine-tune your turntable animation with customizable rotation offset fields for both the skydome and asset, allowing precise control over the rotation angles.  
+
+- **Inversion Toggles:** Toggle inversion of skydome and/or asset rotation independently, providing flexibility in achieving desired turntable effects.  
+
+
+#### Camera Framing  
+
+- **Automatic Asset Framing:** Enable automatic camera framing to adjust the camera based on the asset bounds. Optional padding further enhance control over the framing.  
+
+#### Scaling and Visibility  
+
+- **Normalized Ground and Viewport Skydome Scale:** Maintain visual coherence with normalized ground and viewport skydome scaling, ensuring consistency across different scenes.  
+
+- **Skydome Camera Rays Visibility Toggle:** Easily toggle the visibility of skydome camera rays for a cleaner presentation.  
+
+- **Cyclo Camera Rays Visibility Toggle:** Toggle the visibility of cyclo camera rays to customize the appearance of your turntable render.  
+
+- **Reference Spheres Toggle:** Enable or disable reference spheres as needed for visual guidance in your turntable setup.  
+
 
 ## GafferThree (WIP)
