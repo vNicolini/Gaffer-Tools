@@ -101,8 +101,10 @@ https://github.com/vNicolini/Gaffer-Tools/assets/57097563/05370399-24fc-4d3b-8c9
 
 ### Overview
 
-Inspired by Ezequiel Mastrasso's LightCreator, part of the [LDTGaffer](https://github.com/ezequielmastrasso/LDTGaffer/tree/master "LDTGaffer's Repo") toolsuite he's developped. 
-
+Inspired by Ezequiel Mastrasso's LightCreator, part of the [LDTGaffer](https://github.com/ezequielmastrasso/LDTGaffer/tree/master "LDTGaffer's Repo") toolsuite he's developped.  
+As well as Katana's GafferThree node, used for lighting (hence this name)  
+  
+It includes all you can expect from a lighting utility, creating lights, naming them, set AOV names, and more...  
 
 https://github.com/vNicolini/Gaffer-Tools/assets/57097563/dc0e5cfc-392d-4a5e-babf-a303ad470440
 
