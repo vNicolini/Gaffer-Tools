@@ -43,7 +43,9 @@ Custom box that aleviates any potential user error(s) when loading and setting u
 ### Overview
 
 This Turntable Tool is designed to provide a streamlined way to create turntable animations with ease.  
-This tool streamlines the process of setting up a turntable animation by automating asset and skydome rotation based on the timeline duration (split 50/50 by default).  
+  
+This tool streamlines the process of setting up a turntable animation by automating asset and skydome rotation based on the timeline duration (split 50/50 by default). 
+   
 It also includes features such as rotation offset fields, inversion toggles, automatic camera framing based on the asset bounding box, normalized scaling of the cyclo and HDRI in viewport, HDRI support, and visibility toggles for enhanced control over your turntable renders.
 
 https://github.com/vNicolini/Gaffer-Tools/assets/57097563/05370399-24fc-4d3b-8c94-ae904a8098c8
@@ -110,3 +112,41 @@ https://github.com/vNicolini/Gaffer-Tools/assets/57097563/dc0e5cfc-392d-4a5e-bab
 
 
 
+### Features  
+
+#### Light Types
+GafferThree supports the creation of the following light types:  
+
+- Quad Lights
+- Skydome Lights
+- Distant Lights
+- Spot Lights
+- Disk Lights
+- Cylinder Lights  
+
+#### Per-Light Type Parameters
+Each light type comes with a set of specific parameters that can be adjusted to customize the lighting effect. These parameters include but are not limited to:
+
+- Intensity/Exposure
+- Color
+- Size
+- Cone Angle (for spot lights)
+- Spread Angle
+- Contribution
+- etc ...  
+
+#### HDRI Textures Support
+GafferThree provides support for High Dynamic Range Imaging (HDRI) textures for Skydome and Quad lights. Users can easily load HDRI textures for the Skydome and Quad lights as well as color correct them if needed.  
+
+#### Texture Resolution
+For Quad and Skydome lights with textures, GafferThree allows users to set the resolution of the textures independtly between the viewport and the render output. This enables fine-tuning of the texture quality based on project requirements.  
+
+#### Viewport Scale
+Adjust the viewport scale of the lights visualiser. This feature helps users visualize and finetune more easily the lights orientation.  
+
+#### Drawing Mode
+GafferThree supports different drawing modes for lights in the viewport. Users can choose between wireframe, color, or textured representations to facilitate a more efficient and intuitive lighting workflow.
+
+> [!NOTE]
+> At the time of writting i haven't found a way to have the quad light display its color in the viewport **but** if/when you have an HDRI assigned to it it'll display, and the color correction also are displayed in the viewport. 
+> It is **not** impacting the render output whatsoever, only the viewport visualization
