@@ -38,7 +38,7 @@ Custom box that aleviates any potential user error(s) when loading and setting u
 
 ---
 
-## Turntable Tool (WIP)
+## Turntable Tool
 
 ### Overview
 
@@ -84,7 +84,7 @@ https://github.com/vNicolini/Gaffer-Tools/assets/57097563/05370399-24fc-4d3b-8c9
 - **HDRI Dropdown Menu:** Conveniently select HDRI environments from a dropdown menu, providing a user-friendly interface for quick and easy HDRI adjustments.  
 
 
-#### Batch Render Support (WIP)
+#### Batch Render Support (WIP Feature)
 
 - **Batch Render Toggle:**  Allows to have the various HDRIs to be dispatched and rendered through a wedge node.  
 
@@ -97,7 +97,11 @@ https://github.com/vNicolini/Gaffer-Tools/assets/57097563/05370399-24fc-4d3b-8c9
 >**The Strings plug requires the enabledRowNames of the Spreadsheet as input.**
 ![Gaffer_BatchRenderWedge](https://github.com/vNicolini/Gaffer-Tools/assets/57097563/871fa3a8-690f-4dc3-b222-0930fa267ba2)
 
-## GafferThree (WIP)
+## GafferThree 
+
+### Overview
+
+Inspired by Ezequiel Mastrasso's LightCreator, part of the [LDTGaffer] toolsuite he's developped. (https://github.com/ezequielmastrasso/LDTGaffer/tree/master "LDTGaffer's Repo)
 
 
 https://github.com/vNicolini/Gaffer-Tools/assets/57097563/dc0e5cfc-392d-4a5e-babf-a303ad470440
