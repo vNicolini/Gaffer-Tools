@@ -13,10 +13,10 @@
 ```
 1- Download the repo.
 2- Extract (if downloaded as Zip else just move) the repo in the desired location
-3- Run gafferTools_setup.sh
+3- Run: source ./gafferTools_setup.sh
 ```
 >[!WARNING]
->The bash script currently is untested as I don't have a running linux system at the moment, it's expected to work but you've been warned in case it doesn't.
+>The bash script has only be tested in a VM environment as I don't have a running linux system at the moment, it is expected to work but you've been warned in case it doesn't.
 
 
 ## In a wrapper
