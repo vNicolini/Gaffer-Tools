@@ -37,9 +37,9 @@
 
 The script will create (or append to if they already are set/existing) the following environment variables at user or wrapper/session level (depending on the setup you've chosen):
 ```
-GAFFER_TOOLS = parent directory of the bat/sh script(s) and tools
-GAFFER_STARTUP_PATHS = allows the nodes to show up in the node creation menu in the nodegraph and will create a custom Global Context Variable point to ${GAFFER_TOOLS/assets}
-GAFFER_REFERENCE_PATHS = location of the nodes files
+GAFFER_TOOLS = parent directory of the bat/sh scripts and tools
+GAFFER_STARTUP_PATHS = allows the nodes to show up in the node creation menu in the nodegraph and will create a custom Global Context Variable that points to ${GAFFER_TOOLS/assets}
+GAFFER_REFERENCE_PATHS = location of the node files
 ```  
 
 ### Example of a wrapper on windows:
