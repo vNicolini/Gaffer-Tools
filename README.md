@@ -1,11 +1,20 @@
 # How to install
 
-## Setup on Windows
+## Setup on Windows  
+
+#### As user environment variables:
 ```
 1- Download the repo.
 2- Extract (if downloaded as Zip else just move) the repo in the desired location
 3- Run gafferTools_setup.bat
 ```
+#### In a wrapper:
+```
+1- Download the repo.
+2- Extract (if downloaded as Zip else just move) the repo in the desired location
+3- If you already have a custom wrapper to start `gaffer.cmd` call gafferTools.bat prior to it (see example below)
+```
+
 
 ## Setup on Linux
 ```
@@ -18,11 +27,28 @@
 
 ## How the setup works
 
-The script will create (or append to if they already are set/existing) the following user environment variables:
+The script will create (or append to if they already are set/existing) the following environment variables at user or wrapper/session level (depending on the setup you've chosen):
 ```
 GAFFER_TOOLS = parent directory of the bat/sh script(s) and tools
 GAFFER_STARTUP_PATHS = allows the nodes to show up in the node creation menu in the nodegraph and will create a custom Global Context Variable point to ${GAFFER_TOOLS/assets}
 GAFFER_REFERENCE_PATHS = location of the nodes files
+```  
+
+#### Example of a wrapper on windows:
+```
+@echo off
+
+:: Define Arnold's SDK location
+set "ARNOLD_ROOT=G:/pipeline/renderers/Arnold/Arnold-7.2.5.1-windows"
+
+:: Define Yeti's Procedural location
+set "ARNOLD_PLUGIN_PATH=G:/pipeline/Plugins/Maya/Yeti/2024/4.2.12/bin;%ARNOLD_PLUGIN_PATH%"
+
+:: Load GafferTools
+call "G:/pipeline/Utilities/Tools/Gaffer/Gaffer-Tools/gafferTools.bat"
+
+:: Start Gaffer
+"G:/pipeline/DCCs/gaffer-1.3.10.0-windows/bin/gaffer.cmd"
 ```
 
 # Content
