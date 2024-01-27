@@ -1,16 +1,15 @@
 # How to install
+ 
 
-## Setup on Windows  
-
-### As user environment variables
-#### On windows:
+## As user environment variables
+### On windows:
 ```
 1- Download the repo.
 2- Extract (if downloaded as Zip else just move) the repo in the desired location
 3- Run gafferTools_setup.bat
 ```
 
-#### On linux:
+### On linux:
 ```
 1- Download the repo.
 2- Extract (if downloaded as Zip else just move) the repo in the desired location
@@ -20,21 +19,21 @@
 >The bash script currently is untested as I don't have a running linux system at the moment, it's expected to work but you've been warned in case it doesn't.
 
 
-### In a wrapper
-#### On windows:
+## In a wrapper
+### On windows:
 ```
 1- Download the repo.
 2- Extract (if downloaded as Zip else just move) the repo in the desired location
 3- If you already have a custom wrapper to start `gaffer.cmd` call gafferTools.bat prior to it (see example below)
 ```
-#### On linux:
+### On linux:
 ```
 1- Download the repo.
 2- Extract (if downloaded as Zip else just move) the repo in the desired location
 3- If you already have a custom wrapper to start `gaffer.cmd` call gafferTools.sh prior to it (see example below)
 ```
 
-### How the setup works
+## How the setup works
 
 The script will create (or append to if they already are set/existing) the following environment variables at user or wrapper/session level (depending on the setup you've chosen):
 ```
@@ -43,7 +42,7 @@ GAFFER_STARTUP_PATHS = allows the nodes to show up in the node creation menu in 
 GAFFER_REFERENCE_PATHS = location of the nodes files
 ```  
 
-#### Example of a wrapper on windows:
+### Example of a wrapper on windows:
 ```
 @echo off
 
