@@ -1,6 +1,8 @@
 @echo off
 setlocal enabledelayedexpansion
 
+:: Sets the variables at the user level
+
 set SCRIPT_DIR=%cd%
 
 setx GAFFER_TOOLS "%SCRIPT_DIR%"
