@@ -23,5 +23,10 @@ fi
 # Source the updated .bashrc to apply changes
 source ~/.bashrc
 
+exe() { echo "\$ ${@/eval/}" ; "$@" ; }
+
+# check gaffer paths are properly setup
+exe eval "export |grep GAFFER"
+
 # Pause for user input
 read -n 1 -s -r -p "Press any key to continue..."
