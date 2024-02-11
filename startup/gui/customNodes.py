@@ -1,6 +1,10 @@
+import IECore
+
 import Gaffer
+import GafferScene
 import GafferUI
-import os
+import GafferDispatchUI
+import GafferScene
 
 def __turntable() :
 
