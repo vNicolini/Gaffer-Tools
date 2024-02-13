@@ -17,3 +17,9 @@ if "%GAFFER_REFERENCE_PATHS%"=="" (
 ) else (
     set GAFFER_REFERENCE_PATHS=%GAFFER_REFERENCE_PATHS%;%GAFFER_TOOLS%resources\references
 )
+
+if "%PYTHONPATH%"=="" (
+    set PYTHONPATH=%GAFFER_TOOLS%python
+) else (
+    set PYTHONPATH=%PYTHONPATH%;%GAFFER_TOOLS%python
+)
