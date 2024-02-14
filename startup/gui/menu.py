@@ -10,7 +10,6 @@ import GafferUI
 import GafferDispatchUI
 import GafferSceneUI
 
-import Prism
 
 ## Node creation menu
 ###########################################################################
@@ -44,6 +43,13 @@ def __GafferThreePostCreator( node, menu ) :
 
     node.load("GafferThree.grf")
 
+# Define QuickFocus
+def __QuickFocus() :
+
+    return Gaffer.Reference( "QuickFocus" )
+def __QuickFocusPostCreator( node, menu ) :
+
+    node.load("QuickFocus.grf")
 
 
 # Gaffer Tools nodes
@@ -51,13 +57,10 @@ def __GafferThreePostCreator( node, menu ) :
 nodeMenu.append(path = "/GafferTools/Turntable", nodeCreator = __turntable, postCreator = __turntablePostCreator, searchText = "Turntable")
 nodeMenu.append(path = "/GafferTools/YetiProcedural", nodeCreator = __YetiProcedural, postCreator = __YetiProceduralPostCreator, searchText = "YetiProcedural")
 nodeMenu.append(path = "/GafferTools/GafferThree", nodeCreator = __GafferThree, postCreator = __GafferThreePostCreator, searchText = "GafferThree")
+nodeMenu.append(path = "/GafferTools/QuickFocus", nodeCreator = __QuickFocus, postCreator = __QuickFocusPostCreator, searchText = "QuickFocus")
 
-
-# Prism nodes
-
-nodeMenu.append( "/Prism/Importer", Prism.PrismAssetImporter, searchText = "PrismAssetImporter" )
 
 # TEST NODES 
-import MyTestExtension
-import MyTestExtensionUI
-nodeMenu.append( "/MyTestExtension/Box", MyTestExtension.Box )
+import PrismAssetImporter_Lite
+import PrismAssetImporter_LiteUI
+nodeMenu.append( "/PrismAssetImporter_Lite/PrismAssetImporter_Lite", PrismAssetImporter_Lite.PrismAssetImporter_Lite )
