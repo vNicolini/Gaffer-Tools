@@ -61,6 +61,30 @@ call "G:/pipeline/Utilities/Tools/Gaffer/Gaffer-Tools/gafferTools.bat"
 
 # Content
 
+## QuickFocus (Focus Control Tool)
+
+### Overview
+QuickFocus is a tool designed to simplify and enhance focus control within GafferHQ. It provides an intuitive interface for easily controlling the Focus Point and accurately visualizing it within your scene. QuickFocus offers familiar camera parameters such as focal length, aperture, and f-stop control, allowing users to achieve precise focus adjustments just like with a regular camera node. Additionally, users can set their own geometry or locator as the Focus Point and fine-tune its position with an offset parameter for precise control over where the focal plane lands.  
+
+### Features  
+#### Focus Point Control  
+QuickFocus allows users to easily control the Focus Point within the scene. The Focus Point can be adjusted using intuitive controls to set the desired focal distance.  
+
+#### Visualization of the Focus Point  
+Accurately visualize the Focus Point within the scene. QuickFocus provides visual feedback to help users understand where the focal plane is positioned relative to the scene geometry.  
+
+#### Scaling Parameter  
+Adjust the scale of the Focus Point visualization to suit your scene. The scaling parameter allows users to control the size of the Focus Point indicator for optimal visibility and accuracy.  
+
+#### Camera Parameters  
+QuickFocus offers the same focal length, aperture, and f-stop control as with a regular camera node. Users can adjust these parameters to achieve the desired depth of field effect and control the amount of focus blur in the scene.  
+
+#### Custom Focus Point  
+Set your own geometry or locator as the Focus Point. QuickFocus allows users to specify any object in the scene to act as the Focus Point, giving greater flexibility in focus control.  
+
+#### Fine-Tuning with Offset  
+Fine-tune the position of the Focus Point with an offset parameter. Users can adjust the offset to precisely control where the focal plane lands, ensuring accurate focus control even in complex scenes.  
+
 ## Yeti Procedural
 
 https://github.com/vNicolini/Gaffer-Tools/assets/57097563/e1386b50-22df-4325-b06d-26a47c760550
@@ -183,3 +207,6 @@ GafferThree supports different drawing modes for lights in the viewport. Users c
 > [!NOTE]
 > At the time of writting i haven't found a way to have the quad light display its color in the viewport **but** if/when you have an HDRI assigned to it it'll display, and the color correction also are displayed in the viewport. 
 > It is **not** impacting the render output whatsoever, only the viewport visualization
+
+
+
