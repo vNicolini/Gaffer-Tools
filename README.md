@@ -66,6 +66,8 @@ call "G:/pipeline/Utilities/Tools/Gaffer/Gaffer-Tools/gafferTools.bat"
 ### Overview
 QuickFocus is a tool designed to simplify and enhance focus control within GafferHQ. It provides an intuitive interface for easily controlling the Focus Point and accurately visualizing it within your scene. QuickFocus offers familiar camera parameters such as focal length, aperture, and f-stop control, allowing users to achieve precise focus adjustments just like with a regular camera node. Additionally, users can set their own geometry or locator as the Focus Point and fine-tune its position with an offset parameter for precise control over where the focal plane lands.  
 
+https://github.com/vNicolini/Gaffer-Tools/assets/57097563/713319c3-3b16-4fe7-8d5c-78685c08858a
+
 ### Features  
 #### Focus Point Control  
 QuickFocus allows users to easily control the Focus Point within the scene. The Focus Point can be adjusted using intuitive controls to set the desired focal distance.  
