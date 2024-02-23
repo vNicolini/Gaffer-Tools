@@ -274,7 +274,7 @@ for beauty_aov in beauty_outputs.keys():
 
     # Create beauty AOVs outputs for interactive rendering
     if beauty_aov == "beauty":
-        beauty_interactive_plugs["layerName"] = "rgba"
+        beauty_interactive_plugs["layerName"] = "RGBA"
     else:
         beauty_interactive_plugs["layerName"] = beauty_aov
 
@@ -290,7 +290,7 @@ for beauty_aov in beauty_outputs.keys():
 
     # Create beauty AOVs outputs for batch rendering
     if beauty_aov == "beauty":
-        beauty_batch_plugs["layerName"] = "rgba"
+        beauty_batch_plugs["layerName"] = "RGBA"
         beauty_batch_plugs["compression"] = "zip"
     else:
         beauty_batch_plugs["layerName"] = beauty_aov

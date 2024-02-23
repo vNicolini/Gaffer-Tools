@@ -13,6 +13,7 @@ def __scriptAdded( container, script ) :
             "libraryReferences"
         )
         Gaffer.MetadataAlgo.setReadOnly( variables["libraryReferences"]["name"], True )
+        Gaffer.MetadataAlgo.setReadOnly( variables["libraryReferences"]["value"], True )
 
     # Add "library:assets" variable if not already present
     if "libraryAssets" not in variables :
@@ -22,6 +23,7 @@ def __scriptAdded( container, script ) :
             "libraryAssets"
         )
         Gaffer.MetadataAlgo.setReadOnly( variables["libraryAssets"]["name"], True )
+        Gaffer.MetadataAlgo.setReadOnly( variables["libraryAssets"]["value"], True )
 
 
 application.root()["scripts"].childAddedSignal().connect( __scriptAdded, scoped = False )
