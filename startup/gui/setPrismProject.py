@@ -13,7 +13,7 @@ def set_prism_project( menu, version_up=False):
 		script = scriptWindow.scriptNode()
 		
 		filename = script["fileName"].getValue()
-		print(filename)
+		#print(filename)
 
 		path = Path(filename)
 
@@ -23,19 +23,19 @@ def set_prism_project( menu, version_up=False):
 		VERSION = path.stem.split('_')[-1][1:]  # location of the VERSION in the filename
 
 		projectName = script["variables"]["projectName"]["value"].setValue(PROJECT_NAME)
-		print('PROJECT_NAME:', script["variables"]["projectName"]["value"].getValue())
+		#print('PROJECT_NAME:', script["variables"]["projectName"]["value"].getValue())
 		
 		projectSEQ = script["variables"]["projectSeq"]["value"].setValue(SEQ)
-		print('SEQ:', script["variables"]["projectSeq"]["value"].getValue())
+		#print('SEQ:', script["variables"]["projectSeq"]["value"].getValue())
 				
 		seqSHOT = script["variables"]["seqShot"]["value"].setValue(SHOT)
-		print('SHOT:', script["variables"]["seqShot"]["value"].getValue())
+		#print('SHOT:', script["variables"]["seqShot"]["value"].getValue())
 		
 		shotVERSION = script["variables"]["shotVersion"]["value"].setValue(VERSION)
-		print('VERSION:', script["variables"]["shotVersion"]["value"].getValue())
+		#print('VERSION:', script["variables"]["shotVersion"]["value"].getValue())
 		
 		gafferProjectRootDir = script["variables"]["projectRootDirectory"]["value"].setValue(GAFFER_PROJECT_ROOT_DIR)
-		print('projectRootDirectory:', script["variables"]["projectRootDirectory"]["value"].getValue())
+		#print('projectRootDirectory:', script["variables"]["projectRootDirectory"]["value"].getValue())
 
 	else:
 		print("The 'CG_PROJECTS_DIR' environment variable is not set.")
