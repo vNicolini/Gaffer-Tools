@@ -6,7 +6,7 @@ from pathlib import Path
 import functools
 
 
-def set_prism_project( menu, version_up=False):
+def set_prism_project( menu ):
 	CG_PROJECTS = os.environ['CG_PROJECTS_DIR']
 	if CG_PROJECTS:
 		scriptWindow = menu.ancestor( GafferUI.ScriptWindow )

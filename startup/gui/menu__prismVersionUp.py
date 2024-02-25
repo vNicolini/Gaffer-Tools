@@ -6,10 +6,10 @@ import functools
 import json
 from pathlib import Path
 
-def prism_save_script(menu):
-    proj = os.environ['CG_PROJECTS_DIR']
+def prism_versionUp_script(menu):
+    CG_PROJECTS = os.environ['CG_PROJECTS_DIR']
     
-    if proj:
+    if CG_PROJECTS:
         scriptWindow = menu.ancestor(GafferUI.ScriptWindow)
         script = scriptWindow.scriptNode()
         variables = script["variables"]
@@ -48,8 +48,9 @@ def prism_save_script(menu):
 
             with open(os.path.join(GAFFER_PROJECT_ROOT_DIR, f"{script_name.split('.')[0]}versioninfo.json"), 'w') as jsonfile:
                 jsonfile.write(json.dumps(versioninfo, indent=4))
-                
-            variables["shotVersion"]["value"].setValue(f"{shotVersion:04d}")  
+
+            if variables["projectDepartment"]["value"] == "Lighting":
+                variables["shotVersion"]["value"].setValue(f"{shotVersion:04d}")  
           
             # Grab a screenshot of the first Viewer found in the current ScriptWindow
             scriptWindow = GafferUI.ScriptWindow.acquire( script )
@@ -64,7 +65,7 @@ def prism_save_script(menu):
 GafferUI.ScriptWindow.menuDefinition(application).append(
 "/Prism/" + "Version Up",
 {
-    "command": functools.partial(prism_save_script),
+    "command": functools.partial(prism_versionUp_script),
     "label": "Version Up",
     "shortCut": ""
 }
